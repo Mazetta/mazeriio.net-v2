@@ -11,7 +11,7 @@ export const fetchPages = React.cache(() => {
         data_source_id: process.env.NOTION_DATABASE_ID || '',
         filter: {
             property: 'Status',
-            select: {
+            status: {
                 equals: 'Live',
             },
         },
